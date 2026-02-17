@@ -19,13 +19,13 @@ Before building the visuals, I performed the following data cleaning steps to en
 * **Filtering:** Removed "Land Only" listings to focus strictly on residential housing market value.
 
 ---
-## 🧠 The Business Logic
-I approached this data from the perspective of a **Real Estate Investor**. Instead of looking at "Sticker Price," I focused on **Price per Square Foot ($125.30 avg)** to normalize the data.
+## 🧠 The Business Logic & Insights
+I approached this data from the perspective of a **Real Estate Investor**. Instead of looking at "Sticker Price," I focused on **Price per Square Foot ($125.30 avg)** to normalize the data and find the true value.
 
 ### Key Insights:
-* **Size vs. Price:** Confirmed a strong correlation, but identified a "price jump" once properties hit the 4-bedroom mark—suggesting a supply shortage in family-sized homes.
-* **The Foreclosure Myth:** Data revealed that while foreclosures have a lower entry price, their price-per-foot is often on par with standard listings. The "deal" is usually due to smaller footprints, not necessarily a lower valuation.
-* **Market Segmentation:** Identified specific "Value Zones" where the price per sq. ft. is 15% below the market average.
+* **The 6-Bedroom "Premium":** While price generally scales with size, the data shows a massive, disproportionate jump in value at the **6-bedroom mark**. This indicates a high-value niche for luxury or multi-generational properties that operate on a different pricing model than the rest of the market.
+* **The Foreclosure Myth:** My analysis revealed that while foreclosures have a lower entry price, their price-per-foot is often on par with standard listings. The "discount" is largely a reflection of smaller footprints (mostly 2-3 bedrooms) rather than a lower valuation per square foot.
+* **Inventory Gaps:** By segmenting the market, I identified that the 6-bedroom tier is underserved in the foreclosure market, suggesting that investors looking for high-end ROI should focus on standard listings or specific "Value Zones" where price-per-foot is 15% below average.
 
 ---
 
