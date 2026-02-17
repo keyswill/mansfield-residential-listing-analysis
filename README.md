@@ -28,13 +28,6 @@ I approached this data from the perspective of a **Real Estate Investor**. Inste
 
 ---
 
-## 🚀 How to Use This
-1. Download the `.pbix` file.
-2. Open in Tableau.
-3. Filter by 'Sale Type' to see the value gap in real-time.
-
----
-
 ## 📬 Let's Connect!
 I am currently looking for a **Data Analyst** role where I can turn messy data into clear business strategies. 
 * **LinkedIn:** https://www.linkedin.com/in/kiranwilliams/
