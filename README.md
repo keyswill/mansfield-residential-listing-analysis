@@ -11,6 +11,14 @@ As a career transitioner in Data Analytics, I wanted to move beyond just "making
 [**🔗 View the Interactive Dashboard Here**](https://public.tableau.com/views/ResidentalRealEstateMarketAnalysis_PricingDriversandValueAssessment/ResidentialRealEstateMarketAnalysisPricingDriversandValueAssessment?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ---
 
+## 🛠️ Data Transformation & Cleaning
+Before building the visuals, I performed the following data cleaning steps to ensure accuracy:
+* **Handling Outliers:** Identified extreme luxury listings using the IQR method to ensure the Average Price wasn't heavily skewed.
+* **Null Values:** Addressed missing values in the "Baths" and "Sq Ft" columns to prevent gaps in the scatter plot analysis.
+* **Data Normalization:** Created a calculated field for `Price per Square Foot` to allow for a fair "apples-to-apples" comparison between property types.
+* **Filtering:** Removed "Land Only" listings to focus strictly on residential housing market value.
+
+---
 ## 🧠 The Business Logic
 I approached this data from the perspective of a **Real Estate Investor**. Instead of looking at "Sticker Price," I focused on **Price per Square Foot ($125.30 avg)** to normalize the data.
 
