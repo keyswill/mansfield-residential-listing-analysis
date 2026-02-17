@@ -30,7 +30,7 @@ I approached this data from the perspective of a **Real Estate Investor**. Inste
 ---
 
 ## 🛠️ Tech Stack & Skills
-* **Tool:** Tableau
+* **Tool:** Excel & Tableau
 * **Skills Applied:** Data Cleaning (handling nulls in bath counts), Calculated Fields, Data Visualization, and Storytelling.
 * **Data Source:** Kaggle
 
