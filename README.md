@@ -6,8 +6,9 @@ As a career transitioner in Data Analytics, I wanted to move beyond just "making
 ---
 
 ## 📸 The Dashboard
+<img width="1276" height="722" alt="dashboard-preview" src="https://github.com/user-attachments/assets/2b2abb11-24ff-4ec9-b1e8-0e4edaeffa3f" />
 
-
+[**🔗 View the Interactive Dashboard Here**](https://public.tableau.com/views/ResidentalRealEstateMarketAnalysis_PricingDriversandValueAssessment/ResidentialRealEstateMarketAnalysisPricingDriversandValueAssessment?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ---
 
 ## 🧠 The Business Logic
