@@ -1,42 +1,107 @@
-# 🏠 Real Estate Value Finder: Data Analytics Project
+# Mansfield Residential Listing Analysis
 
-### The Big Question: Are Foreclosures Actually a Better Deal?
-As a career transitioner in Data Analytics, I wanted to move beyond just "making charts" and solve a real business problem. This project investigates the factors driving housing prices and tests whether foreclosure listings offer genuine value or just smaller square footage.
+An interactive Tableau case study examining how property size, bedroom and
+bathroom counts, listing type, and location relate to residential listing
+prices in an archived Mansfield, Texas dataset.
 
----
+> **Source note:** The 336-record dataset was previously obtained from Kaggle.
+> The original dataset URL is no longer available. Prices represent listings,
+> not confirmed closed sales.
 
-## 📸 The Dashboard
-<img width="1276" height="722" alt="dashboard-preview" src="https://github.com/user-attachments/assets/2b2abb11-24ff-4ec9-b1e8-0e4edaeffa3f" />
+## Executive Summary
 
-[**🔗 View the Interactive Dashboard Here**](https://public.tableau.com/views/ResidentalRealEstateMarketAnalysis_PricingDriversandValueAssessment/ResidentialRealEstateMarketAnalysisPricingDriversandValueAssessment?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
----
+The analysis evaluates 336 archived residential listings and replaces
+outlier-sensitive averages with medians for the primary dashboard metrics.
+Square footage has the strongest observed relationship with listing price among
+the available property characteristics. Listing-price and price-per-square-foot
+distributions are strongly right-skewed, so rare luxury listings can materially
+distort averages.
 
-## 🛠️ Data Transformation & Cleaning
-Before building the visuals, I performed the following data cleaning steps to ensure accuracy:
-* **Handling Outliers:** Identified extreme luxury listings using the IQR method to ensure the Average Price wasn't heavily skewed.
-* **Null Values:** Addressed missing values in the "Baths" and "Sq Ft" columns to prevent gaps in the scatter plot analysis.
-* **Data Normalization:** Created a calculated field for `Price per Square Foot` to allow for a fair "apples-to-apples" comparison between property types.
-* **Filtering:** Removed "Land Only" listings to focus strictly on residential housing market value.
+The dashboard is designed for descriptive price benchmarking. It does not
+estimate property value, investment return, or causal price effects.
 
----
-## 🧠 The Business Logic & Insights
-I approached this data from the perspective of a **Real Estate Investor**. Instead of looking at "Sticker Price," I focused on **Price per Square Foot ($125.30 avg)** to normalize the data and find the true value.
+## Dashboard
 
-### Key Insights:
-* **The 6-Bedroom "Premium":** While price generally scales with size, the data shows a massive, disproportionate jump in value at the **6-bedroom mark**. This indicates a high-value niche for luxury or multi-generational properties that operate on a different pricing model than the rest of the market.
-* **The Foreclosure Myth:** My analysis revealed that while foreclosures have a lower entry price, their price-per-foot is often on par with standard listings. The "discount" is largely a reflection of smaller footprints (mostly 2-3 bedrooms) rather than a lower valuation per square foot.
-* **Inventory Gaps:** By segmenting the market, I identified that the 6-bedroom tier is underserved in the foreclosure market, suggesting that investors looking for high-end ROI should focus on standard listings or specific "Value Zones" where price-per-foot is 15% below average.
+![Mansfield Residential Listing Analysis dashboard](dashboard/mansfield-listing-dashboard.png)
 
----
+[Download the packaged Tableau workbook](dashboard/Mansfield%20Residential%20Listing%20Analysis.twbx)
 
-## 🛠️ Tech Stack & Skills
-* **Tool:** Excel & Tableau
-* **Skills Applied:** Data Cleaning (handling nulls in bath counts), Calculated Fields, Data Visualization, and Storytelling.
-* **Data Source:** Kaggle
+## Business Questions
 
----
+1. How does property size relate to listing price?
+2. How do median listing prices differ across bedroom and bathroom groups?
+3. How does median price per square foot vary by listing type?
+4. How are listing prices and price per square foot distributed?
+5. Where are the archived properties located?
 
-## 📬 Let's Connect!
-I am currently looking for a **Data Analyst** role where I can turn messy data into clear business strategies. 
-* **LinkedIn:** https://www.linkedin.com/in/kiranwilliams/
-* **Email:** kiranwilliams1997@gmail.com
+## Headline Metrics
+
+| Metric | Value |
+| --- | ---: |
+| Listings | 336 |
+| Median listing price | $300,000 |
+| Median price per square foot | $104.93 |
+| Median property size | 2,801 sq ft |
+
+## Validated Findings
+
+1. **Square footage has the strongest observed relationship with listing
+   price.** Its Pearson correlation with price is 0.656, compared with 0.500
+   for bedrooms and 0.438 for bathrooms.
+2. **The market snapshot is right-skewed.** Mean listing price is $399,140,
+   while the median is $300,000. Mean price per square foot is $125.27, while
+   the median is $104.93.
+3. **Luxury categories have small samples.** The 6+ bedroom group contains
+   seven listings. The 5+ bathroom group contains four listings, so their
+   medians should not be generalized to the broader dataset.
+4. **Listing-type samples are unequal.** The dataset contains 302 Realtor, 24
+   By Owner, and 10 Foreclosure listings.
+5. **Foreclosure listings have a lower median price per square foot in this
+   sample.** The foreclosure median is $81.16 versus $104.05 for Realtor
+   listings, approximately 22% lower. Property condition, repair costs, and
+   neighborhood characteristics are unavailable.
+
+## Recommendations
+
+- Use median price and median price per square foot when benchmarking listings
+  because the distributions contain large luxury outliers.
+- Treat 6+ bedroom and 5+ bathroom properties as small specialty segments
+  rather than representative categories.
+- Use listing type as a screening characteristic, not as evidence of investment
+  value.
+- Add property condition, year built, lot size, neighborhood, listing date, and
+  closed-sale price before attempting valuation or return analysis.
+
+## Tools and Skills Demonstrated
+
+- Tableau dashboard development
+- Calculated fields, filters, dashboard actions, and geographic visualization
+- Exploratory data analysis and outlier-aware KPI selection
+- Business-question definition and analytical guardrails
+- Data validation and stakeholder-focused storytelling
+
+## Repository Guide
+
+| Path | Contents |
+| --- | --- |
+| [`dashboard/`](dashboard/) | Packaged Tableau workbook and dashboard preview |
+| [`data/`](data/) | Archived Excel source and data dictionary |
+| [`docs/business-requirements.md`](docs/business-requirements.md) | Stakeholders, requirements, and acceptance criteria |
+| [`docs/validated-analysis.md`](docs/validated-analysis.md) | Reconciled metrics, sample sizes, and claim corrections |
+
+## Limitations
+
+- The original Kaggle URL and collection date are unavailable.
+- The data represents listings rather than confirmed sales.
+- Listing-type groups are highly unequal.
+- Property condition, repair costs, neighborhood labels, lot size, year built,
+  and time-on-market are unavailable.
+- The analysis is descriptive and does not establish causality or investment
+  return.
+
+## Author
+
+Kiran Williams
+
+[LinkedIn](https://www.linkedin.com/in/kiranwilliams/) |
+[Portfolio](https://github.com/keyswill)
