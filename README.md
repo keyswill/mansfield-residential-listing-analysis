@@ -20,6 +20,12 @@ distort averages.
 The dashboard is designed for descriptive price benchmarking. It does not
 estimate property value, investment return, or causal price effects.
 
+## Main Business Question
+
+> How can buyers and agents benchmark archived Mansfield listings by price, size, configuration, listing type, and location without overstating what the data proves?
+
+See the complete [Phase 2 Business Understanding](docs/02_business_understanding.md) and [Phase 3 Data Understanding](docs/03_data_understanding.md).
+
 ## Dashboard
 
 ![Mansfield Residential Listing Analysis dashboard](dashboard/mansfield-listing-dashboard.png)
@@ -88,6 +94,8 @@ estimate property value, investment return, or causal price effects.
 | [`data/`](data/) | Archived Excel source and data dictionary |
 | [`docs/business-requirements.md`](docs/business-requirements.md) | Stakeholders, requirements, and acceptance criteria |
 | [`docs/validated-analysis.md`](docs/validated-analysis.md) | Reconciled metrics, sample sizes, and claim corrections |
+| [`docs/02_business_understanding.md`](docs/02_business_understanding.md) | Business decision, stakeholders, success measures, and claim boundaries |
+| [`docs/03_data_understanding.md`](docs/03_data_understanding.md) | Dataset grain, field roles, sample context, and analytical readiness |
 
 ## Limitations
 
