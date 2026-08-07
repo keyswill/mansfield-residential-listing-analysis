@@ -24,7 +24,7 @@ estimate property value, investment return, or causal price effects.
 
 > How can buyers and agents benchmark archived Mansfield listings by price, size, configuration, listing type, and location without overstating what the data proves?
 
-See the complete [Phase 2 Business Understanding](docs/02_business_understanding.md) and [Phase 3 Data Understanding](docs/03_data_understanding.md).
+See the complete [Business Understanding](docs/business_understanding.md) and [Data Understanding](docs/data_understanding.md).
 
 ## Dashboard
 
@@ -94,8 +94,8 @@ See the complete [Phase 2 Business Understanding](docs/02_business_understanding
 | [`data/`](data/) | Archived Excel source and data dictionary |
 | [`docs/business-requirements.md`](docs/business-requirements.md) | Stakeholders, requirements, and acceptance criteria |
 | [`docs/validated-analysis.md`](docs/validated-analysis.md) | Reconciled metrics, sample sizes, and claim corrections |
-| [`docs/02_business_understanding.md`](docs/02_business_understanding.md) | Business decision, stakeholders, success measures, and claim boundaries |
-| [`docs/03_data_understanding.md`](docs/03_data_understanding.md) | Dataset grain, field roles, sample context, and analytical readiness |
+| [`docs/business_understanding.md`](docs/business_understanding.md) | Business decision, stakeholders, success measures, and claim boundaries |
+| [`docs/data_understanding.md`](docs/data_understanding.md) | Dataset grain, field roles, sample context, and analytical readiness |
 
 ## Limitations
 
